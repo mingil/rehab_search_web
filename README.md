@@ -22,7 +22,7 @@ This application is fully dockerized for easy deployment.
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YOUR_GITHUB_USERNAME/rehab_search_web.git](https://github.com/YOUR_GITHUB_USERNAME/rehab_search_web.git)
+git clone [https://github.com/mingil/rehab_search_web.git](https://github.com/mingil/rehab_search_web.git)
 cd rehab_search_web
 ```
 
