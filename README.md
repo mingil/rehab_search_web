@@ -24,7 +24,9 @@ This application is fully dockerized for easy deployment.
 ```bash
 git clone [https://github.com/YOUR_GITHUB_USERNAME/rehab_search_web.git](https://github.com/YOUR_GITHUB_USERNAME/rehab_search_web.git)
 cd rehab_search_web
-2. Configure Environment Variables
+```
+
+### 2. Configure Environment Variables
 Copy the example environment file and fill in your details:
 
 Bash
@@ -37,7 +39,7 @@ OPENALEX_EMAIL: Recommended for faster API responses.
 
 WEB_PASSWORD & ADMIN_PASSWORD: Secure your portal access.
 
-3. Build and Deploy
+### 3. Build and Deploy
 Bash
 docker-compose up -d --build
 Access the application at: http://localhost:18501
@@ -47,5 +49,5 @@ Secure Authentication: Uses SHA-256 hashed cookies to prevent unauthorized admin
 
 Memory Optimized: Features robust retry-logic for API fetching and prevents memory leaks during PDF parsing. Docker memory is securely limited to 8GB to prevent host system crashes (OOM).
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License.
