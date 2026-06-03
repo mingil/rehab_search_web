@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  rehab_web:
+    build: .
+    container_name: rehab_search_web
+    user: "1026:100"
+    restart: on-failure:5
+    ports:
+      - "18501:8501"
+    env_file:
+      - .env
+    environment:
+      - HOME=/tmp
+    volumes:
+      - ./:/app
+    # Limit resources to prevent NAS host crashes
+    # Synology Kernel Fix: CPU limit removed to avoid CFS scheduler error
+    deploy:
+      resources:
+        limits:
+          memory: 4G

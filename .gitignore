@@ -1,0 +1,21 @@
+# Environments & Secrets
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs & Temporary Files
+*.log
+rehab_scholar.log
+all_code_for_ai.txt
+
+# Downloaded/Exported Files
+*.xlsx
+*.docx
+*.ris
+
+# OS generated files
+.DS_Store
+Thumbs.db
